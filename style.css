@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-image:url(imagenes/fondo\ onda.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;  
+}
+.sesenta {
+    animation: movimiento 2s infinite alternate; /* Animación de movimiento */
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateY(20px); /* Posición final */
+    }
+}
+.horario{
+    background-image: url(imagenes/pastel.avif);
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 500px; /* Establece una altura para el contenedor */
+    position: relative; /* Asegura que los elementos secundarios respeten este contenedor */
+    margin-top: 200px;
+    height: 250px;
+}
+.fecha{
+    position: absolute; /* Permite posicionar este elemento dentro del contenedor */
+    bottom: 0; /* Lo posiciona en la parte inferior del contenedor */
+    left: 0; /* Lo posiciona a la izquierda del contenedor */
+    right: 0; /* Ajusta el ancho al contenedor */
+    background-color: rgba(255, 255, 255, 0.8); /* Agrega un color de fondo con transparencia */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+h2{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
