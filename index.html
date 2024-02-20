@@ -21,8 +21,25 @@
             <div class="horario">
                 <div class="Fecha"> <h2>Fecha: Sabado 16 de marzo</h2>
                     <h2> Horario: 10:00 hs a 21:00 hs</h2></div>
-               
             </div>
+            <h2>Faltan</h2>
+            <div id="contador"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 id="lugar">
+                Lugar 
+            </h2>
+            gmp-map center="-36.8683500,-60.2608430" zoom="4" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="40.12150192260742,-100.45039367675781" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+    <script src="contador.js"></script> 
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Lmm6AmYCwqBbbmGOX-R5eEP-thsPAUsHERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+        
+          
+</body>
         </div>
     </div>
 </body>

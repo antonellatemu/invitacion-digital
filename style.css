@@ -50,3 +50,11 @@ h2{
     text-align: center;
     margin-top: 50px;
 }
+#contador{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#map{
+    width: 70px;
+    
+}
