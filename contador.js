@@ -13,10 +13,7 @@ function actualizarContador() {
     contadorElemento.innerHTML = `
         <p>${dias} días, ${horas} horas, ${minutos} minutos, y ${segundos}segundos.</p>
     `;
-    document.getElementById('dias').textContent = dias.toString().padStart(2, '0');
-    document.getElementById('horas').textContent = horas.toString().padStart(2, '0');
-    document.getElementById('minutos').textContent = minutos.toString().padStart(2, '0');
-    document.getElementById('segundos').textContent = segundos.toString().padStart(2, '0');
+    
 
     if (diferencia <= 0) {
         contadorElemento.innerHTML = '<p>¡La fecha objetivo ha llegado!</p>';

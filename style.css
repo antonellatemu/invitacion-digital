@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script&family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     background-image:url(imagenes/fondo\ onda.webp);
     background-attachment: fixed;
@@ -52,9 +53,39 @@ h2{
 }
 #contador{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Roboto", sans-serif;
+    font-size: 35px;
+    color: rgb(180, 132, 158);
+    width: 50%;
+    background: linear-gradient(rgb(190, 156, 164),rgb(219, 194, 202),rgb(208, 193, 200));
+    display: grid;
+    place-items: center; /* Centrado horizontal y vertical */
+    height: 40vh; 
+    border-radius: 20px;
+    border: 1px solid transparent; /* Añadir un borde inicial */
+    transition: border-color 0.3s ease; /* Añadir transición para animar el cambio de borde */
+    box-shadow: 0px 0px 10px 0px rgba(136, 133, 133, 0.75);
+    margin: auto;
+    animation: pulse 2s infinite alternate; /* Aplicamos la animación llamada "pulse" */
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(138, 114, 127, 0.5); /* Estado inicial */
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(189, 96, 161, 0.8); /* Estado final */
+  }
 }
 #map{
-    width: 70px;
-    
+    margin: auto;
+    align-items: center;
+    text-align: center;
 }
+button{
+    border-radius: 20px;
+    background-color: black;
+    color: black;
+    color: whitesmoke;
+}
+
