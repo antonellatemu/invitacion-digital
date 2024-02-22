@@ -23,3 +23,10 @@ function actualizarContador() {
 
 actualizarContador();
 const intervaloActualizacion = setInterval(actualizarContador, 1000);
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+

@@ -85,7 +85,7 @@ h2{
     box-shadow: 0 0 10px 0 rgba(138, 114, 127, 0.5); /* Estado inicial */
   }
   100% {
-    box-shadow: 0 0 20px 0 rgba(189, 96, 161, 0.8); /* Estado final */
+    box-shadow: 0 0 20px 0 rgba(12, 10, 11, 0.8); /* Estado final */
   }
 }
 #map{
@@ -99,4 +99,24 @@ button{
     color: black;
     color: whitesmoke;
 }
+
+      
+      @keyframes animarTexto {
+        0% {
+          transform: scale(1); /* Escala inicial */
+        }
+        50% {
+          transform: scale(1.2); /* Escala al 120% a la mitad de la animación */
+        }
+        100% {
+          transform: scale(1); /* Volver a la escala inicial */
+        }
+      }
+      h2 {
+        animation: animarTexto 3s ease-in-out infinite; /* Nombre de la animación, duración, función de temporización, repetición */
+      }
+    #lugar{
+        margin-top: 10px;
+    }
+
 
