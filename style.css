@@ -38,9 +38,7 @@ h1{
     margin-top: 200px;
     height: 250px;
     display: grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    min-width: 250px;
 }
 .fecha{
     margin-top: 100px;
@@ -51,12 +49,14 @@ h1{
     justify-content: center;
     align-items: center;
     height: 200px;
+    min-width: 200px;
 }
 h2{
     font-family: "Coming Soon", cursive;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     margin-top: 50px;
+    min-width: 250px;
 }
 #contador{
     text-align: center;
@@ -77,6 +77,7 @@ h2{
     box-shadow: 0px 0px 10px 0px rgba(136, 133, 133, 0.75);
     margin: auto;
     animation: pulse 2s infinite alternate; /* Aplicamos la animación llamada "pulse" */
+    min-width: 300px;
 }
 
 @keyframes pulse {
