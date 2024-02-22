@@ -37,10 +37,17 @@ h1{
     position: relative; /* Asegura que los elementos secundarios respeten este contenedor */
     margin-top: 200px;
     height: 250px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
 .fecha{
     margin-top: 100px;
-    display: flex;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -59,6 +66,9 @@ h2{
     width: 50%;
     background: linear-gradient(rgb(198, 181, 185),rgb(219, 194, 202),rgb(219, 211, 215));
     display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
     place-items: center; /* Centrado horizontal y vertical */
     height: 40vh; 
     border-radius: 20px;
