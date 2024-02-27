@@ -12,7 +12,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 100); // Intervalo de tiempo en milisegundos entre cada letra
 });
-document.addEventListener("DOMContentLoaded", function() {
-    var elemento = document.getElementById("contenido");
-    elemento.scrollIntoView({ behavior: "smooth" });
-});

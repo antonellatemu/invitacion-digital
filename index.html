@@ -13,50 +13,60 @@
 <body>
     <div class="row">
         <div class="col-12,.col-sm">
-            <div id="contenido">
-                <div class="sesenta"><h1>¡¡Te invito a festejar mis 60!!</h1></div>
+            <div class="sesenta"><h1>¡¡Te invito a festejar mis 60!!</h1></div>
 
-            </div>
         </div>
-        <div class="row">
-            <div class=".col-12,.col-sm">
-                <div class="horario">
-                    <div class="Fecha"> <h2>Fecha: Sabado 16 de marzo</h2>
-                        <h2> Horario: 10:00 hs a 21:00 hs</h2></div>
-                </div>
-                <h2>Faltan!!!</h2>
-                <div class="contenedor">
-                    <div id="contador"></div>
-                </div>
-                
+    </div>
+    <div class="row">
+        <div class=".col-12,.col-sm">
+            <div class="horario">
+                <div class="Fecha"> <h2>Fecha: Sabado 16 de marzo</h2>
+                    <h2> Horario: 10:00 hs a 21:00 hs</h2></div>
+            </div>
+            <h2>Faltan!!!</h2>
+            <div class="contenedor">
+                <div id="contador"></div>
+            </div>
+            
+           
+        </div>
+    </div>
+    <div class="row">
+        <div class=".col-12,.col-sm">
+            <h2 id="lugar">
+                Lugar 
+            </h2>
+            
+         <div id="map">
+            <a href="mapa.html"><button>ver mapa</button></a>
+         </div>
+         <div class="row">
+            <div class="col-12.col-sm">
+                <div class="informacion">
+                <h2>
+                    Te comentamos que:</h2>
+                    <ul>
+                        <li>Es necesario llevar maya y toalla</li>
+                        <li>Cada uno podra traer una bebida y algo rico para compartir con el mate</li>
+                        <li>El que guste y pueda, traer un accesorio de cotillon para divertirnos</li>
+                    </ul>
+</div>
+<script>
+    // Función para desplazar la página hacia abajo lentamente
+    function scrollDown() {
+        window.scrollBy(0, 3); // Ajusta el segundo valor para controlar la velocidad de desplazamiento
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            clearInterval(scrollInterval); // Detener la animación cuando llegue al final de la página
+        }
+    }
+
+    // Llama a la función scrollDown() cada cierto intervalo para animar el desplazamiento
+    var scrollInterval = setInterval(scrollDown, 50); // Ajusta el valor para controlar la velocidad de desplazamiento
+</script>
                
             </div>
-        </div>
-        <div class="row">
-            <div class=".col-12,.col-sm">
-                <h2 id="lugar">
-                    Lugar 
-                </h2>
-                
-             <div id="map">
-                <a href="mapa.html"><button>ver mapa</button></a>
-             </div>
-             <div class="row">
-                <div class="col-12.col-sm">
-                    <div class="informacion">
-                    <h2>
-                        Te comentamos que:</h2>
-                        <ul>
-                            <li>Es necesario llevar maya y toalla</li>
-                            <li>Cada uno podra traer una bebida y algo rico para compartir con el mate</li>
-                            <li>El que guste y pueda, traer un accesorio de cotillon para divertirnos</li>
-                        </ul>
-    </div>
-                   
-                </div>
-             </div>
-            </div>
-           
+         </div>
+        
          
          <script src="script.js"></script>
          <script src="contador.js"></script> 
