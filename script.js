@@ -12,15 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 100); // Intervalo de tiempo en milisegundos entre cada letra
 });
-const mapButton = document.getElementById('mapButton');
-const mapContainer = document.getElementById('mapContainer');
-
-// Mostrar el mapa cuando el mouse pasa por encima del botón
-mapButton.addEventListener('mouseenter', function() {
-  mapContainer.classList.remove('hidden');
-});
-
-// Ocultar el mapa cuando el mouse sale del botón
-mapButton.addEventListener('mouseleave', function() {
-  mapContainer.classList.add('hidden');
+document.addEventListener("DOMContentLoaded", function() {
+    var elemento = document.getElementById("contenido");
+    elemento.scrollIntoView({ behavior: "smooth" });
 });

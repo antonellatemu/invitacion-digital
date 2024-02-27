@@ -64,14 +64,14 @@ h2{
     font-size: 35px;
     color: rgb(180, 132, 158);
     width: 50%;
-    background: linear-gradient(rgb(198, 181, 185),rgb(219, 194, 202),rgb(219, 211, 215));
+    background: linear-gradient(rgb(251, 244, 246),rgb(244, 218, 226),rgb(255, 217, 236));
     display: grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     place-items: center; /* Centrado horizontal y vertical */
     height: 40vh; 
-    border-radius: 20px;
+    border-radius: 200px;
     border: 1px solid transparent; /* Añadir un borde inicial */
     transition: border-color 0.3s ease; /* Añadir transición para animar el cambio de borde */
     box-shadow: 0px 0px 10px 0px rgba(136, 133, 133, 0.75);
@@ -93,31 +93,14 @@ h2{
     align-items: center;
     text-align: center;
 }
-.container {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Altura del contenedor principal */
+button{
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 27px;
 }
 
-.map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Asegura que el mapa esté por debajo del botón */
-}
-#mapButton {
-  position: absolute;
-  bottom: 20px; /* Espacio entre el botón y el fondo del contenedor */
-  left: 50%; /* Centra horizontalmente el botón */
-  transform: translateX(-50%); /* Ajusta el centrado horizontal */
-  z-index: 2; /* Asegura que el botón esté por encima del mapa */
-}
 
-.hidden {
-  display: none;
-}
 
 
 
